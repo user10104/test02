@@ -40,4 +40,3 @@ public class Exam_12 {
 	
 	}
 	
-	
