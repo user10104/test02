@@ -17,32 +17,33 @@ public class java_exam {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		
-	
-		int num = 0;
-		int user = 0;
 		int count = 0;
+		int sum = 0;
+		System.out.println("입력 횟수 : ");
+		int number = scanner.nextInt();
 		
-		while(num %2 == 0) {
-			System.out.println("정수 입력>");
-			user = scanner. nextInt();
-			count++;
-			
-		 
-				
-			else if (num%2>=0)
-				System.out.println("올바른 수를 적어 주세요");
-				else if (count>5)
-					break;
-					
-				
+			while (count<number) { 
+				System.out.print("숫자 입력: ");
 			}
-			
-		System.out.println(count + "회만에 맞춤");
-		System.out.println("com: "+ num + ", user : " + user);
-		
-		}
+			if(scanner.hasNextInt()) {
+				int num = scanner.nextInt();
+				if (num%2 == 0) {sum += num;
+			}
+				count++;
+				
+			}else if (scanner.hasNextDouble()) {
+				scanner.next();
+				System.out.println("실수는 입력 불가합니다. 다시 입력하세요");
+
+			}else
+			{
+				scanner.next();
+				System.out.println("문자는 입력 불가합니다. 다시 입력하세요");
+				}
+			}
 	
+	
+			
 
 }
 	
